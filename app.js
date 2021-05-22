@@ -61,6 +61,9 @@ app.get("/", function(req, res) {
 	console.log('hello world');
 	res.status(200).send('hello world');
 });
+app.get("/health", function(req, res) {
+	res.status(200).send('I am alive');
+});
 
 httpServer.listen(80);
 //httpsServer.listen(443);
