@@ -57,6 +57,7 @@ app.post('/', (req, res) => {
 	
 });
 */
+var port = process.env.PORT || 8080;
 app.get("/", function(req, res) {
 	console.log('hello world');
 	res.status(200).send('hello world');
@@ -65,7 +66,7 @@ app.get("/health", function(req, res) {
 	res.status(200).send('I am alive');
 });
 
-httpServer.listen(80);
+httpServer.listen(port);
 //httpsServer.listen(443);
 console.log('Listen 80');
 
