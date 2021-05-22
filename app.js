@@ -2,7 +2,7 @@ const express = require('express');
 //const https = require('https');
 const http = require('http');
 //const fs = require('fs');
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const app = express()
 
 
